@@ -18,7 +18,7 @@ app.post('/upload',(req,res,next)=>{
 
 	 const file = req.files.file;
      const fileName  =file.name;
-   const filePath = 'file/'+fileName;
+   const filePath = './'+fileName;
 
      file.mv(filePath,async(err)=>{
 
